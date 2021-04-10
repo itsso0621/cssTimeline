@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-self: center;
+  background: linear-gradient(80deg, rgb(192, 0, 209), blue);
+}
+.timeline {
+  display: block;
+  margin-left: 45%;
+}
+.bar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.step-1 span {
+  display: block;
+  position: relative;
+  background: cornsilk;
+  height: 100%;
+  width: 10px;
+  border-radius: 50px;
+  margin: 0 3px;
+  justify-content: space-between;
+}
+
+.step-1 span {
+  animation: wave 1.2s linear;
+}
+.step-1 span:nth-child(9) {
+  animation-delay: 1.2s;
+}
+.step-1 span:nth-child(8) {
+  animation-delay: 1.05s;
+}
+.step-1 span:nth-child(7) {
+  animation-delay: 0.9s;
+}
+.step-1 span:nth-child(6) {
+  animation-delay: 0.75s;
+}
+.step-1 span:nth-child(5) {
+  animation-delay: 0.6s;
+}
+.step-1 span:nth-child(4) {
+  animation-delay: 0.45s;
+}
+.step-1 span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.step-1 span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.step-1 span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.step-2 span {
+  animation: wave2 1.2s linear;
+}
+.step-2 span:nth-child(9) {
+  animation-delay: 1.2s;
+}
+.step-2 span:nth-child(8) {
+  animation-delay: 0.9s;
+}
+.step-2 span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.step-2 span:nth-child(6) {
+  animation-delay: 0.3s;
+}
+.step-2 span:nth-child(5) {
+  animation-delay: 0s;
+}
+.step-2 span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.step-2 span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.step-2 span:nth-child(2) {
+  animation-delay: 0.9s;
+}
+.step-2 span:nth-child(1) {
+  animation-delay: 1.2s;
+}
+
+.step-3 span {
+  animation: colour 1.2s linear;
+}
+
+.step-4 span {
+  animation: wider 1.2s linear;
+}
+
+.step-5 span {
+  animation: everything 1.2s linear;
+}
+
+@keyframes wave {
+  50% {
+    height: 20%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes wave2 {
+  50% {
+    height: 20%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes colour {
+  50% {
+    height: 20%;
+    background: crimson;
+  }
+  100% {
+    height: 100%;
+    background: cornsilk;
+  }
+}
+
+@keyframes wider {
+  50% {
+    width: 20px;
+  }
+  100% {
+    width: 10px;
+  }
+}
+
+@keyframes everything {
+  50% {
+    height: 20%;
+    background: crimson;
+    width: 20px;
+  }
+  100% {
+    height: 100%;
+    background: cornsilk;
+    width: 10px;
+  }
+}
+
+/* buttons  */
+.buttons {
+  margin-top: 70px;
+  padding: 10px;
+}
+
+button {
+  padding: 8px;
+  background: crimson;
+  border: none;
+  color: #fff;
+  border-radius: 15%;
+}
+
+button:hover {
+  background: rgb(109, 0, 22);
+}
+
+button:active {
+  background: crimson;
+}
